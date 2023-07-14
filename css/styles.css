@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+:root {
+  --bs-body-font-family: "Space Grotesk", sans-serif !important;
+}
 
 body {
     margin: 0;
@@ -85,34 +88,30 @@ h2, .h2{
 }
 
 h1, .h1 {
-    font-size: 3rem!important;
+  font-size: 3rem!important;
   }
 
-  @media (min-width: 768px) {
-    h1, .h1 {
-      font-size: 5rem !important;
-    }
-  }
 
-  @media (min-width: 992px) {
-    h1, .h1 {
-      font-size: 7rem!important;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    h1, .h1 {
-      font-size: 10rem!important;
-    }
-  }
-
-  h2, .h2 {
-    font-size: 1.5rem!important;
-  }
+h2, .h2 {
+  font-size: 1.5rem!important;
+}
+h6, .h6 {
+  font-size: 1rem!important;
+}
+p, .p{
+  font-size: 1.4rem!important;
+}
 
   @media (min-width: 768px) {
     h2, .h2 {
       font-size:  2rem!important;
+    }
+
+    h1, .h1 {
+      font-size: 5rem !important;
+    }
+    h6, .h6 {
+      font-size: 1rem!important;
     }
   }
 
@@ -120,63 +119,26 @@ h1, .h1 {
     h2, .h2 {
       font-size: 3rem!important;
     }
+    h1, .h1 {
+      font-size: 7rem!important;
+    }
+    h6, .h6 {
+      font-size: 1.5rem!important;
+    }
   }
 
   @media (min-width: 1200px) {
     h2, .h2 {
         font-size: 4rem !important;;
     }
+    h1, .h1 {
+      font-size: 10rem!important;
+    }
+    h6, .h6 {
+      font-size: 1.5rem!important;
+    }
   }
 
 
-.footer{
-  background-color: black;
-  padding-inline: 10%;
-  padding-block: 40px;
-  justify-content: center;
-  font-family: "Space Grotesk", sans-serif !important;
-}
 
-.img1{
-  width: 70px;
-  height: 54px;
-  padding-bottom: 15px;
-}
-p{
-  color: white;
-  padding-right: 15px;
-}
-h3{
-  color: #ffffff !important;
-}
-.col.footer-item2 ,.col.footer-item3 ,.col.footer-item4{
-  text-align: center;
-}
-.col.footer-item2 ul {
-  list-style: none;
-  padding-left: 30%;
-}
-
-.col.footer-item2 ul li {
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.col.footer-item2 ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.col.footer-item3 p{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.col.footer-item3 a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.col.footer-item3 a:hover {
-  text-decoration: underline;
-}
 
