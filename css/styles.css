@@ -76,15 +76,27 @@ header{
 }
 
 
-.container-fluid .row .col-md{
+.col-md-4.col-xs-12{
     border: 1px solid white;
     padding: 10px;
   }
-.col-md video, .col-md img{
+  .media-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+  }
+  
+  .media-container video,
+  .media-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
-}
+  }
+
+
 .text2{
     margin: 60px;
     padding-left: 40px;
