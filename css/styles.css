@@ -295,13 +295,13 @@ p a{
 
 /* TERMINA NOSOTROS */
 /* COMIENZA SERVICIOS */
-.container-fluid.banner1{
+.container-fluid.banner{
   position: relative;
   z-index: 1;
   --bs-gutter-x: none !important;
 }
 
-.container-fluid.banner1 h2{
+.container-fluid.banner h2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -318,7 +318,7 @@ p a{
   padding: 2%;
 }
 
-.col-md-6.col-xs-12{
+.col-md-6.col-xs-12.collague{
   border: 1px solid white;
   padding: 10px;
 }
@@ -342,6 +342,62 @@ p a{
 .col-md-6.col-xs-12 p{
   padding: 6%;
 }
-
-
 /* TERMINA SERVICIOS */
+
+/* COMIENZA CONTACTO */
+
+.container-fluid.contactar{
+  background-color: black;
+  padding: 3%;
+  
+}
+.row.row-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-md-6.col-xs-12.contacto p{
+  margin: 3%;
+  margin-top: 0;
+}
+.container-fluid.form{
+  padding: 6%;
+  width: 100%;
+}
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid #ffffff !important;
+  padding-left: 0;
+  padding: 3%;
+  margin: 2%;
+  border-radius: 0px !important;
+  color: white !important;
+  background-color: transparent !important;
+ }
+  
+
+.form-control:active, .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #ffffff; }
+
+  input::placeholder, textarea::placeholder {
+      color: rgb(255, 255, 255) !important;
+      text-overflow: ellipsis !important;
+      white-space: nowrap !important;
+  }
+
+  .centrado {
+    display: flex;
+    justify-content: center;
+  }
+  .items-forms{
+    	padding: 3.8%;
+  }
+
+  hr{
+    opacity: 1 !important;
+    border-top: #fff  1px solid!important;
+  }
+/* TERMINA CONTACTO */
