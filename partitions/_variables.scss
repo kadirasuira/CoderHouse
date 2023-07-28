@@ -1,0 +1,15 @@
+/*VARIABLES*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+
+$firma:"Space Grotesk", sans-serif;
+$texto:'Mansalva', cursive;
+$colorfondo: rgb(0 0 0);
+
+:root {
+  --bs-body-font-family: "Space Grotesk", sans-serif !important;
+  --bs-dark-rgb: $colorfondo !important;
+}
+
+

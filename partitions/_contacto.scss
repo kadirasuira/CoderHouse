@@ -1,0 +1,61 @@
+/* COMIENZA CONTACTO */
+
+.container-fluid{
+  &.contactar {
+    background-color: black;
+    padding: 3%;
+
+    .row{
+      &.row-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .col-md-6.col-xs-12{
+          &.contacto{
+            p {
+              margin: 3%;
+              padding: 6%;
+              margin-top: 0;
+            } 
+            .container-fluid{
+              &.form {
+                padding: 6%;
+                width: 100%;
+
+                .items-forms {
+                  padding: 3.8%;
+
+                  .form-control {
+                    border: none !important;
+                    border-bottom: 1px solid #ffffff !important;
+                    padding-left: 0;
+                    padding: 3%;
+                    margin: 2%;
+                    border-radius: 0px !important;
+                    color: white !important;
+                    background-color: transparent !important;
+                  
+                    &:active, &:focus {
+                      outline: none;
+                      -webkit-box-shadow: none;
+                      box-shadow: none;
+                      border-color: #ffffff;
+                    }
+                  }
+
+                  input::placeholder, textarea::placeholder {
+                    color: rgb(255, 255, 255) !important;
+                    text-overflow: ellipsis !important;
+                    white-space: nowrap !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* TERMINA CONTACTO */

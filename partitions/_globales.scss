@@ -1,0 +1,194 @@
+/* COMIENZA GLOBALES: AFECTAN A TODAS LAS PAGES*/
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: $firma;
+  background-color: $colorfondo;
+
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+
+    .container-fluid{
+
+        .navbar-brand {
+            margin-left: 2%;
+        
+            .whitelogo {
+                margin: 20px;
+            }
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.67)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+        }
+
+        .navbar-collapse {
+            width: 100%;
+            padding: 2%;
+
+            .navbar-nav {
+                font-size: 17px;
+                font-weight: 500;
+                text-decoration: none;
+                margin-right: auto;
+    
+                .nav-link {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+    
+  }
+  .highlight {
+    font-weight: 400;
+  }
+}
+
+/* TIPOGRAFÍA */
+h2, .h2 {
+    color: white !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $firma !important;
+  }
+  
+  h1, .h1 {
+    font-size: 3rem !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h6, .h6 {
+    font-size: 1rem !important;
+  }
+  
+  p, .p {
+    font-size: 0.8rem !important;
+    color: rgb(191, 188, 188);
+  }
+  
+  p a {
+    text-decoration: none !important;
+    color: rgb(191, 188, 188);
+  }
+
+  @media (min-width: 0px) {
+    .navbar.navbar-expand-md.white {
+      background-color: $colorfondo !important;
+    }
+  
+    .nav-link {
+      color: white !important;
+    }
+  
+    .navbar-toggler {
+      border: 1px solid rgb(255 255 255 / 67%) !important;
+    }
+  
+    .whitelogo {
+      content: url('../assets/img/lowefilms1.png') !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav .nav-link.active {
+      color: var(--bs-navbar-active-color) !important;
+    }
+  
+    .navbar.navbar-expand-md.white {
+      background-color: transparent !important;
+    }
+  
+    .nav-link {
+      color: var(--bs-nav-link-color) !important;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: var(--bs-navbar-toggler-icon-bg) !important;
+    }
+  
+    .navbar-collapse {
+      background: transparent !important;
+    }
+  
+    h2, .h2 {
+      font-size: 2rem !important;
+    }
+  
+    h1, .h1 {
+      font-size: 5rem !important;
+    }
+  
+    h6, .h6 {
+      font-size: 1rem !important;
+    }
+  
+    p, .p {
+      font-size: 0.9rem !important;
+    }
+  
+    .whitelogo {
+      content: url('../assets/img/logo.png') !important;
+      width: 70px !important;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    h2, .h2 {
+      font-size: 3rem !important;
+    }
+  
+    h1, .h1 {
+      font-size: 7rem !important;
+    }
+  
+    h6, .h6 {
+      font-size: 1.5rem !important;
+    }
+  
+    p, .p {
+      font-size: 1rem !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 4rem !important;
+    }
+  
+    h1, .h1 {
+      font-size: 12rem !important;
+    }
+  
+    h6, .h6 {
+      font-size: 1.5rem !important;
+    }
+  
+    p, .p {
+      font-size: 1.3rem !important;
+    }
+  }
+  .centrado {
+    display: flex;
+    justify-content: center;
+  }
+
+  hr {
+    opacity: 1 !important;
+    border-top: #fff 1px solid !important;
+  }
+
+  .text2 {
+    font-weight: 700;
+    margin: 3%;
+    padding-left: 2%;
+}
+/* TERMINA GLOBALES */
