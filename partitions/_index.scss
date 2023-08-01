@@ -1,6 +1,35 @@
 /* COMIENZA INDEX */
 
 .container-fluid{
+    .navbar-nav{
+      .nav-animation2 {
+        &:after,
+        &:before {
+          content: "";
+          width: 0%;
+          display: block;
+          height: 1px;
+          transition: all 0.3s ease;
+          margin-top: 2px;
+          transition: all 300ms ease-in;
+        }
+      
+        &:after {
+          bottom: 25%;
+          left: 0;
+        }
+      
+        &:hover {
+          &:after {
+            width: 100%;
+            height: 2px;
+            bottom: 25%;
+            background-color: $colorfondo;
+          }
+          
+        }
+      }
+    }
     &.section2 {
         position: relative;
         min-height: 100vh;
@@ -9,7 +38,7 @@
         height: 100vh;
         --bs-gutter-x:0;
         z-index: -1;
-        background-color: $colorfondo;
+        background-color: $colorfondo !important;
         
         video {
             min-width: 100%;
@@ -28,7 +57,11 @@
             transform: translate(-50%, -50%);
             text-align: center;
             font-family: $texto;
+            background-size: 300% 300%;
+            
         }
+
+        
     }
     &.section3 {
         background-color: $colorfondo;
