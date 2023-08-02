@@ -21,9 +21,11 @@
       
         &:hover {
           &:after {
+
             width: 100%;
             height: 2px;
             bottom: 25%;
+            color: $colorfondo !important;
             background-color: $colorfondo;
           }
           
@@ -71,10 +73,34 @@
             border: 1px solid white;
             padding: 10px;
 
+            
+
             .media-container {
                 position: relative;
                 overflow: hidden;
-                padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+                padding-bottom: 56.25%;
+                 /* Proporción de aspecto 16:9 */
+
+                 .media-titulo{
+                  display: flex;
+                  position: absolute;
+                  z-index: 1;
+                  text-decoration: none;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 1;
+                  color: white;
+                  background-color: rgba(0, 0, 0, 0.712);
+                  opacity: 0;
+                  transition: opacity .5s;
+
+
+                  &:hover{
+                    opacity: 1;
+                  }
+                }
               
                 video, img {
                   position: absolute;

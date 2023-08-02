@@ -114,7 +114,7 @@ h2, .h2 {
     }
   
     .nav-link {
-      color: white !important;
+      color: white;
     }
   
     .navbar-toggler {
@@ -136,7 +136,7 @@ h2, .h2 {
     }
   
     .nav-link {
-      color: var(--bs-nav-link-color) !important;
+      color: var(--bs-nav-link-color);
     }
   
     .navbar-toggler-icon {
@@ -146,7 +146,16 @@ h2, .h2 {
     .navbar-collapse {
       background: transparent !important;
     }
-  
+    
+    h3, .h3{
+      font-size: 1rem !important;
+      font-weight: bold !important;
+    }
+
+    .media-descrip{
+      font-size: 0.5rem;
+    }
+
     h2, .h2 {
       font-size: 2rem !important;
     }
@@ -170,6 +179,13 @@ h2, .h2 {
   }
   
   @media (min-width: 992px) {
+    h3, .h3{
+      font-size: 2rem !important;
+      font-weight: bold !important;
+    }
+    .media-descrip{
+      font-size: 1rem;
+    }
     h2, .h2 {
       font-size: 3rem !important;
     }
@@ -195,11 +211,17 @@ h2, .h2 {
     h1, .h1 {
       font-size: 12rem !important;
     }
-  
+    
     h6, .h6 {
       font-size: 1.5rem !important;
     }
-  
+    h3, .h3{
+      font-size: 2rem !important;
+      font-weight: bold !important;
+    }
+    .media-descrip{
+      font-size: 1.5rem;
+    }
     p, .p {
       font-size: 1.3rem !important;
     }
