@@ -1,4 +1,8 @@
 /* COMIENZA GLOBALES: AFECTAN A TODAS LAS PAGES*/
+:root {
+  --bs-body-font-family: "Space Grotesk", sans-serif !important;
+  --bs-dark-rgb: $colorfondo !important;
+}
 
 body {
   margin: 0;
@@ -7,6 +11,9 @@ body {
   font-family: $firma;
   background-color: $colorfondo;
 
+  .full-image {
+   @include banners;
+  }
   header {
     position: absolute;
     width: 100%;
