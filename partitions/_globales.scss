@@ -121,7 +121,7 @@ h2, .h2 {
     }
   
     .nav-link {
-      color: white;
+      color: white !important;
     }
   
     .navbar-toggler {
@@ -134,16 +134,31 @@ h2, .h2 {
   }
   
   @media (min-width: 768px) {
-    .navbar-nav .nav-link.active {
+    .navbar-nav{
+       &.nav-2{
+        .nav-link:hover{
+          color: $colorfondo !important;
+        }
+
+       }
+
+      .nav-link.active {
       color: var(--bs-navbar-active-color) !important;
     }
+    } 
   
     .navbar.navbar-expand-md.white {
       background-color: transparent !important;
     }
+
+   
   
     .nav-link {
-      color: var(--bs-nav-link-color);
+      color: var(--bs-nav-link-color) !important;
+
+      &:hover{
+        color: white !important;
+      }
     }
   
     .navbar-toggler-icon {

@@ -111,7 +111,7 @@ p a {
     background-color: rgb(0, 0, 0) !important;
   }
   .nav-link {
-    color: white;
+    color: white !important;
   }
   .navbar-toggler {
     border: 1px solid rgba(255, 255, 255, 0.67) !important;
@@ -121,6 +121,9 @@ p a {
   }
 }
 @media (min-width: 768px) {
+  .navbar-nav.nav-2 .nav-link:hover {
+    color: rgb(0, 0, 0) !important;
+  }
   .navbar-nav .nav-link.active {
     color: var(--bs-navbar-active-color) !important;
   }
@@ -128,7 +131,10 @@ p a {
     background-color: transparent !important;
   }
   .nav-link {
-    color: var(--bs-nav-link-color);
+    color: var(--bs-nav-link-color) !important;
+  }
+  .nav-link:hover {
+    color: white !important;
   }
   .navbar-toggler-icon {
     background-image: var(--bs-navbar-toggler-icon-bg) !important;
