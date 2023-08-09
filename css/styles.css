@@ -110,8 +110,8 @@ p a {
   .navbar.navbar-expand-md.white {
     background-color: rgb(0, 0, 0);
   }
-  .nav-link {
-    color: white !important;
+  .navbar.navbar-expand-md.white .nav-link {
+    color: white;
   }
   .navbar-toggler {
     border: 1px solid rgba(255, 255, 255, 0.67);
@@ -124,11 +124,17 @@ p a {
   .navbar-nav.nav-2 .nav-link:hover {
     color: rgb(0, 0, 0);
   }
-  .navbar-nav .nav-link.active {
-    color: var(--bs-navbar-active-color);
-  }
   .navbar.navbar-expand-md.white {
     background-color: transparent;
+  }
+  .navbar.navbar-expand-md.white .nav-link {
+    color: var(--bs-nav-link-color);
+  }
+  .navbar.navbar-expand-md.white .nav-link.active {
+    color: var(--bs-navbar-active-color);
+  }
+  .navbar.navbar-expand-md.white .nav-link:hover {
+    color: rgb(0, 0, 0);
   }
   .nav-link {
     color: var(--bs-nav-link-color);

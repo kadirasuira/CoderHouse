@@ -118,11 +118,13 @@ h2, .h2 {
   @media (min-width: 0px) {
     .navbar.navbar-expand-md.white {
       background-color: $colorfondo ;
+
+      .nav-link {
+        color: white;
+      }
     }
   
-    .nav-link {
-      color: white !important;
-    }
+    
   
     .navbar-toggler {
       border: 1px solid rgb(255 255 255 / 67%) ;
@@ -142,13 +144,22 @@ h2, .h2 {
 
        }
 
-      .nav-link.active {
-      color: var(--bs-navbar-active-color) ;
-    }
+      
     } 
   
     .navbar.navbar-expand-md.white {
       background-color: transparent ;
+      
+      .nav-link{
+        color: var(--bs-nav-link-color);
+        &.active {
+          color: var(--bs-navbar-active-color) ;
+        }
+        &:hover{
+          color: $colorfondo;
+        }
+      }
+
     }
 
    
